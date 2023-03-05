@@ -1,5 +1,5 @@
 import './App.css';
-import Maingenga from "./components/Maingenga"
+import Maingenga from "./components/Maingenga";
 
 function App() {
   return (

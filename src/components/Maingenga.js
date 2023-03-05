@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import Nav from './Nav';
 import About from './pages/About';
 import Work from './pages/Work';
-import Gengamask from './pages/Gengamask'
+import Gengamask from './pages/Gengamask';
+import Intro from './pages/Intro';
+import Contact from './pages/Contact'
 
 export default function Maingenga() {
     const [currentPage, changePage] = useState('Gengamask');
@@ -14,6 +16,9 @@ export default function Maingenga() {
         if (currentPage === 'About') {
             return <About />;
         }
+        if (currentPage === 'Contact') {
+            return <Contact />;
+        }
             return <Work />;
     }
 
@@ -24,12 +29,10 @@ export default function Maingenga() {
         <div>
             <Nav currentPage = {currentPage} handlePage = {handlePage} />
         </div>
-            <div className="title text-slate-50 text-8xl flex justify-center items-center h-screen"> 
-        <section>
-                <h1 className='gengamask'>gengamask</h1>
-         </section>
-        </div>
-            {renderPage()}
+            < Intro />
+            <div className='flex justify-center'>
+                {renderPage()}
+            </div>
         </div>
     )
 }
