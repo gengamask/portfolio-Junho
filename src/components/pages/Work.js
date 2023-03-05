@@ -10,7 +10,9 @@ export default function Work() {
         <div id="work" className="flex justify-center items-center">
             <div id="workContainer" className="flex flex-col space-x-5 md:flex-row">
                 <div id="cfbCard">
+                    <button>
                     <img onClick={() => setShowCfb(true)} className="rounded-2xl" id="cfb" src="https://github.com/gengamask/CFB-Roster-Builder/raw/main/assets/Screenshot%202023-02-14%20202907.png"></img>
+                    </button>
                 </div>
                 <Cfb onClose={handleClose} visible={ showCfb }/>
                 <div id="driveCard">
