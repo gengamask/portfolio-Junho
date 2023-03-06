@@ -11,26 +11,10 @@ export default function Work() {
     
     const handleCloseDrive = () => setShowDrive(false);
 
-    // Function will execute on click of button
-    const onButtonClick = () => {
-        // using Java Script method to get PDF file
-        fetch('Resume.pdf').then(response => {
-            response.blob().then(blob => {
-                // Creating new object of PDF file
-                const fileURL = window.URL.createObjectURL(blob);
-                // Setting various property values
-                let alink = document.createElement('a');
-                alink.href = fileURL;
-                alink.download = 'Resume.pdf';
-                alink.click();
-            })
-        })
-    }
-
     return (
         <div>
             <div className="flex justify-center">
-                <button onClick={onButtonClick} className='text-white hover:text-amber-400'><img className="rounded-full h-10 w-10" src="https://avatars.githubusercontent.com/u/109125494?v=4"></img></button>
+                <a href="Resume.pdf" download='Resume.pdf'><button><img className="h-10 w-10 rounded-full" src="https://avatars.githubusercontent.com/u/109125494?v=4"></img></button></a>
             </div>
             <div id="workContainer" className="flex flex-col items-center justify-center md:flex md:items-center md:flex-row h-screen70 w-8/10 gap-x-4 gap-y-5">
                 <div id="cfbCard">
