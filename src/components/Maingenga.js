@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Nav from './Nav';
-import About from './pages/About';
 import Work from './pages/Work';
 import Gengamask from './pages/Gengamask';
 import Intro from './pages/Intro';
@@ -12,9 +11,6 @@ export default function Maingenga() {
     const renderPage = () => {
         if (currentPage === 'Gengamask') {
             return <Gengamask />;
-        }
-        if (currentPage === 'About') {
-            return <About />;
         }
         if (currentPage === 'Contact') {
             return <Contact />;
@@ -30,7 +26,7 @@ export default function Maingenga() {
             <Nav currentPage = {currentPage} handlePage = {handlePage} />
         </div>
             < Intro />
-            <div className='flex justify-center'>
+            <div className='flex justify-center items-center'>
                 {renderPage()}
             </div>
         </div>

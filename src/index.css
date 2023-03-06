@@ -101,11 +101,6 @@ code {
   height: 70vh;
 }
 
-#workContainer {
-  min-height: 100vh;
-  max-width: 80%;
-}
-
 #cfb:hover {
   box-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
   cursor: pointer;
