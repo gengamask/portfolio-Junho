@@ -5,10 +5,10 @@ export default function DrivePop({visible, onClose}) {
 
     return (
         <div id="cfbPop" className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex justify-center items-center">
-            <div className="flex justify-center items-center h-full"> 
-                <div id="card" className="rounded-3xl bg-white flex flex-col justify-center items-center w-9/12 h-full space-y-5">
+            <div className="flex justify-center items-center h-5/6"> 
+                <div id="card" className="rounded-3xl bg-white flex flex-col justify-center items-center w-9/12 h-fit space-y-5">
                     <button onClick={ onClose } >X</button>
-                    <img className="h-full w-10/12" src="https://user-images.githubusercontent.com/109125494/222983991-eb408061-0dbd-4f09-9a0f-c6585cc0eb61.png" alt="cfb"></img>
+                    <img className="h-fit w-9/12" src="https://user-images.githubusercontent.com/109125494/222983991-eb408061-0dbd-4f09-9a0f-c6585cc0eb61.png" alt="cfb"></img>
                     <div id="intro" className="decoration-8">
                         <h1 className="text-2xl">Find My Scenic Drive</h1>
                         <p>
