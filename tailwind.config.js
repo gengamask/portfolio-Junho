@@ -16,6 +16,10 @@ module.exports = {
       },
       height: {
         'screen70': '70vh'
+      },
+      margin: {
+        '85': '21rem',
+        '86': '22rem'
       }
     },
   },
