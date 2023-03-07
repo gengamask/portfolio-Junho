@@ -15,11 +15,16 @@ module.exports = {
         '118': '32rem',
       },
       height: {
-        'screen70': '70vh'
+        'screen70': '70vh',
+        '108': '10vh'
       },
       margin: {
         '85': '21rem',
         '86': '22rem'
+      },
+      minHeight: {
+        '20': '20vh',
+        '10': '10vh'
       }
     },
   },
