@@ -1,16 +1,21 @@
 import React, { useState } from "react";
 import Cfb from "./subpages/Cfb";
 import Drive from "./subpages/Drive";
+import ChatBite from "./subpages/ChatBite"
 
 export default function Work() {
     const [showCfb, setShowCfb] = useState(false);
 
     const [showDrive, setShowDrive] = useState(false);
 
+    const [showBite, setShowBite] = useState(false);
+
     const handleCloseCfb = () => setShowCfb(false);
     
     const handleCloseDrive = () => setShowDrive(false);
 
+    const handleCloseBite = () => setShowBite(false);
+ 
     return (
         <div>
             <div className="flex justify-center">
@@ -29,6 +34,12 @@ export default function Work() {
                     </div>
                 </div>
                     <Drive onClose={handleCloseDrive} visible={ showDrive }/>
+                <div id="chatBiteCard" >
+                    <div>
+                        <img onClick={() => setShowBite(true)} className="rounded-2xl h-32 w-48 sm:h-72 sm:w-112" id="chatBite" src="https://github.com/gengamask/ChatBite/raw/main/assets/Screenshot2.png"></img>
+                    </div>
+                </div>
+                    <ChatBite onClose={handleCloseBite} visible={ showBite }/>    
             </div>
         </div>
     );
